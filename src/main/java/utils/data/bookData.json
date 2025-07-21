@@ -1,0 +1,121 @@
+{
+
+  "missing_name": {
+    "author": "Valid Author",
+    "published_year": 2022,
+    "book_summary": "Some summary"
+  },
+  "previous_year": {
+    "name": "previous year book",
+    "author": "Author X",
+    "published_year": 2020,
+    "book_summary": "Testing edge case year 0",
+    "expected_status": 200
+  },
+  "futureBook": {
+    "name": "Future Book",
+    "author": "Futurist",
+    "published_year": 2100,
+    "book_summary": "Book from the future",
+    "expected_status": 200
+  },
+  "bigSummary": {
+    "name": "Big Summary",
+    "author": "Verbose Author",
+    "published_year": 2024,
+    "book_summary": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+    "expected_status": 200
+  },
+  "multilingualBook": {
+    "name": "नमस्ते",
+    "author": "लेखक",
+    "published_year": 2024,
+    "book_summary": "Multilingual support",
+    "expected_status": 200
+  },
+  "htmlSymbolsBook": {
+    "name": "<script>alert('x')</script>",
+    "author": "@uthor#1!",
+    "published_year": 2023,
+    "book_summary": "Contains symbols",
+    "expected_status": 200
+  },
+  "missingAuthor": {
+    "name": "No Author Book",
+    "published_year": 2023,
+    "book_summary": "Missing author field",
+    "expected_status": 422
+  },
+  "missingYear": {
+    "name": "No Year Book",
+    "author": "Anonymous",
+    "book_summary": "Missing published_year",
+    "expected_status": 422
+  },
+  "missingSummary": {
+    "name": "No Summary Book",
+    "author": "Sum Less",
+    "published_year": 2024,
+    "expected_status": 422
+  },
+  "nullFields": {
+    "name": null,
+    "author": null,
+    "published_year": null,
+    "book_summary": null,
+    "expected_status": 422
+  },
+  "emptyStrings": {
+    "name": "",
+    "author": "",
+    "published_year": 2023,
+    "book_summary": "",
+    "expected_status": 422
+  },
+  "invalidDataTypes": {
+    "name": 12345,
+    "author": true,
+    "published_year": "Two Thousand Twenty",
+    "book_summary": 9999,
+    "expected_status": 422
+  },
+  "negativeYear": {
+    "name": "Negative Year",
+    "author": "Tester",
+    "published_year": -1990,
+    "book_summary": "Invalid year",
+    "expected_status": 422
+  },
+  "zeroYearInvalid": {
+    "name": "Zero Year",
+    "author": "Zero Man",
+    "published_year": 0,
+    "book_summary": "Should fail if 0 not allowed",
+    "expected_status": 400
+  },
+  "emptyBody": {
+    "expected_status": 422
+  },
+  "valid_update": {
+    "id": 10,
+    "name": "Shiva",
+    "author": "S'hiva",
+    "published_year": 2023,
+    "book_summary": "Some summary",
+    "expected_status": 200
+  },
+    "valid_book_flow": {
+    "name": "Chain Book",
+    "author": "Chain Author",
+    "published_year": 2023,
+    "book_summary": "Book created for chaining test",
+    "expected_status": 200
+  },
+    "delete_book": {
+    "name": "Delete Test Book",
+    "author": "Anonymous",
+    "published_year": 2023,
+    "book_summary": "Book to be deleted",
+    "expected_status": 200
+  }
+}

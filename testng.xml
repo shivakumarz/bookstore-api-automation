@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Bookstore Suite">
+  <test name="Bookstore Tests">
+    <classes>
+      <class name="tests.AuthData" />
+      <class name="tests.CreateBook" />
+      <class name="tests.CreateBookMissingName" />
+      <class name="tests.CreateBookPreviousYear" />
+      <class name="tests.UpdateBookTest" />
+      <class name="tests.ValidateCreateUpdateGetDeleteBook" />
+      <class name="tests.DeleteBookTest" />
+    </classes>
+  </test>
+</suite>

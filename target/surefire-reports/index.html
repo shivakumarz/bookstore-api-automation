@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Bookstore_Suite" class="navigator-link">
+              <span class="suite-name border-passed">Bookstore Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Bookstore_Suite" class="navigator-link ">
+                    <span>D:\bookstore-api-tests\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Bookstore_Suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Bookstore_Suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Bookstore_Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Bookstore_Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Bookstore_Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Bookstore_Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">9 methods,   9 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Bookstore_Suite" class="hide-methods passed suite-Bookstore_Suite"> (hide)</a> <!-- hide-methods passed suite-Bookstore_Suite -->
+                      <a href="#" panel-name="suite-Bookstore_Suite" class="show-methods passed suite-Bookstore_Suite"> (show)</a> <!-- show-methods passed suite-Bookstore_Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Bookstore_Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Bookstore_Suite" title="tests.CreateBookMissingName" class="method navigator-link" hash-for-method="createBookWithMissingName">createBookWithMissingName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Bookstore_Suite" title="tests.CreateBookPreviousYear" class="method navigator-link" hash-for-method="createBookWithPreviousYear">createBookWithPreviousYear</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Bookstore_Suite" title="tests.CreateBook" class="method navigator-link" hash-for-method="createBookWithValidRandomData">createBookWithValidRandomData</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Bookstore_Suite" title="tests.AuthData" class="method navigator-link" hash-for-method="loginWithVariousData({email=shiva@jk.com, password=pass123}, 200)">loginWithVariousData({email=shiva@jk.com, password=pass123}, 200)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Bookstore_Suite" title="tests.AuthData" class="method navigator-link" hash-for-method="loginWithVariousData({email=shiva@jk.com}, 500)">loginWithVariousData({email=shiva@jk.com}, 500)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Bookstore_Suite" title="tests.AuthData" class="method navigator-link" hash-for-method="loginWithVariousData({email=shiva@jk.com, password=pass1234}, 400)">loginWithVariousData({email=shiva@jk.com, password=pass1234}, 400)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Bookstore_Suite" title="tests.DeleteBookTest" class="method navigator-link" hash-for-method="testDeleteBookAndVerifyNotFound">testDeleteBookAndVerifyNotFound</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Bookstore_Suite" title="tests.ValidateCreateUpdateGetDeleteBook" class="method navigator-link" hash-for-method="testFullBookFlow">testFullBookFlow</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Bookstore_Suite" title="tests.UpdateBookTest" class="method navigator-link" hash-for-method="updateBookFromJson">updateBookFromJson</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Bookstore_Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Bookstore_Suite" class="panel Bookstore_Suite">
+          <div class="suite-Bookstore_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.CreateBook</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="createBookWithValidRandomData">
+                  </a> <!-- createBookWithValidRandomData -->
+                  <span class="method-name">createBookWithValidRandomData</span>
+                  <em>
+(Create a book with valid dynamically generated data)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Bookstore_Suite-class-passed -->
+          <div class="suite-Bookstore_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.DeleteBookTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDeleteBookAndVerifyNotFound">
+                  </a> <!-- testDeleteBookAndVerifyNotFound -->
+                  <span class="method-name">testDeleteBookAndVerifyNotFound</span>
+                  <em>
+(Create a book, delete it, and confirm it's not retrievable)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Bookstore_Suite-class-passed -->
+          <div class="suite-Bookstore_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.ValidateCreateUpdateGetDeleteBook</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testFullBookFlow">
+                  </a> <!-- testFullBookFlow -->
+                  <span class="method-name">testFullBookFlow</span>
+                  <em>
+(End-to-end test for book lifecycle using chained REST calls)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Bookstore_Suite-class-passed -->
+          <div class="suite-Bookstore_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.AuthData</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginWithVariousData({email=shiva@jk.com, password=pass123}, 200)">
+                  </a> <!-- loginWithVariousData({email=shiva@jk.com, password=pass123}, 200) -->
+                  <span class="method-name">loginWithVariousData</span>
+                  <span class="parameters">({email=shiva@jk.com, password=pass123},200)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginWithVariousData({email=shiva@jk.com}, 500)">
+                  </a> <!-- loginWithVariousData({email=shiva@jk.com}, 500) -->
+                  <span class="method-name">loginWithVariousData</span>
+                  <span class="parameters">({email=shiva@jk.com},500)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginWithVariousData({email=shiva@jk.com, password=pass1234}, 400)">
+                  </a> <!-- loginWithVariousData({email=shiva@jk.com, password=pass1234}, 400) -->
+                  <span class="method-name">loginWithVariousData</span>
+                  <span class="parameters">({email=shiva@jk.com, password=pass1234},400)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Bookstore_Suite-class-passed -->
+          <div class="suite-Bookstore_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.UpdateBookTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="updateBookFromJson">
+                  </a> <!-- updateBookFromJson -->
+                  <span class="method-name">updateBookFromJson</span>
+                  <em>
+(Update a book using data from JSON and validate the response)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Bookstore_Suite-class-passed -->
+          <div class="suite-Bookstore_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.CreateBookMissingName</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="createBookWithMissingName">
+                  </a> <!-- createBookWithMissingName -->
+                  <span class="method-name">createBookWithMissingName</span>
+                  <em>
+(Attempt to create a book without the required 'name' field)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Bookstore_Suite-class-passed -->
+          <div class="suite-Bookstore_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.CreateBookPreviousYear</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="createBookWithPreviousYear">
+                  </a> <!-- createBookWithPreviousYear -->
+                  <span class="method-name">createBookWithPreviousYear</span>
+                  <em>
+(Create a book with a published year in the past)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Bookstore_Suite-class-passed -->
+        </div> <!-- panel Bookstore_Suite -->
+        <div panel-name="test-xml-Bookstore_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">D:\bookstore-api-tests\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Bookstore Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Bookstore Tests&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;tests.AuthData&quot;/&gt;
+      &lt;class name=&quot;tests.CreateBook&quot;/&gt;
+      &lt;class name=&quot;tests.CreateBookMissingName&quot;/&gt;
+      &lt;class name=&quot;tests.CreateBookPreviousYear&quot;/&gt;
+      &lt;class name=&quot;tests.UpdateBookTest&quot;/&gt;
+      &lt;class name=&quot;tests.ValidateCreateUpdateGetDeleteBook&quot;/&gt;
+      &lt;class name=&quot;tests.DeleteBookTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Bookstore Tests --&gt;
+&lt;/suite&gt; &lt;!-- Bookstore Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Bookstore_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Bookstore Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Bookstore Tests (7 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Bookstore_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Bookstore Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Bookstore_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Bookstore Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Bookstore_Suite');
+function tableData_Bookstore_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(9);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'loginWithVariousData')
+data.setCell(0, 2, 'tests.AuthData')
+data.setCell(0, 3, 1859);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'loginWithVariousData')
+data.setCell(1, 2, 'tests.AuthData')
+data.setCell(1, 3, 244);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'createBookWithValidRandomData')
+data.setCell(2, 2, 'tests.CreateBook')
+data.setCell(2, 3, 195);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testFullBookFlow')
+data.setCell(3, 2, 'tests.ValidateCreateUpdateGetDeleteBook')
+data.setCell(3, 3, 148);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'testDeleteBookAndVerifyNotFound')
+data.setCell(4, 2, 'tests.DeleteBookTest')
+data.setCell(4, 3, 71);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'updateBookFromJson')
+data.setCell(5, 2, 'tests.UpdateBookTest')
+data.setCell(5, 3, 56);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'createBookWithPreviousYear')
+data.setCell(6, 2, 'tests.CreateBookPreviousYear')
+data.setCell(6, 3, 39);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'loginWithVariousData')
+data.setCell(7, 2, 'tests.AuthData')
+data.setCell(7, 3, 23);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'createBookWithMissingName')
+data.setCell(8, 2, 'tests.CreateBookMissingName')
+data.setCell(8, 3, 20);
+window.suiteTableData['Bookstore_Suite']= { tableData: data, tableDiv: 'times-div-Bookstore_Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 2 seconds</span>
+              <div id="times-div-Bookstore_Suite">
+              </div> <!-- times-div-Bookstore_Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Bookstore_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Bookstore Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Bookstore_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Bookstore_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.AuthData</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">loginWithVariousData({email=shiva@jk.com, password=pass1234}, 400)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">loginWithVariousData({email=shiva@jk.com}, 500)</span>
+                <span class="method-start">1909 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">loginWithVariousData({email=shiva@jk.com, password=pass123}, 200)</span>
+                <span class="method-start">1935 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.CreateBook</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">2190 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">createBookWithValidRandomData</span>
+                <span class="method-start">2455 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.CreateBookMissingName</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">2652 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">createBookWithMissingName</span>
+                <span class="method-start">2663 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.CreateBookPreviousYear</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">2683 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">createBookWithPreviousYear</span>
+                <span class="method-start">2693 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.UpdateBookTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">2732 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">updateBookFromJson</span>
+                <span class="method-start">2743 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.ValidateCreateUpdateGetDeleteBook</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">2801 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">testFullBookFlow</span>
+                <span class="method-start">2810 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.DeleteBookTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">2961 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">testDeleteBookAndVerifyNotFound</span>
+                <span class="method-start">2970 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

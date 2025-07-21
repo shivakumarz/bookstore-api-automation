@@ -1,0 +1,1 @@
+{"uuid":"7e0c2841-be71-4f3e-8ecc-931026327f65","name":"tests.ValidateCreateUpdateGetDeleteBook","children":["e0b9692d-e45a-4a10-a1c9-37d88545a103"],"befores":[{"name":"setup","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1753063127143,"stop":1753063127150}],"afters":[],"start":1753063122976,"stop":1753063127398}

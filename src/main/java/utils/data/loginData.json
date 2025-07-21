@@ -1,0 +1,13 @@
+{
+  "validUser": {
+    "email": "shiva@jk.com",
+    "password": "pass123"
+  },
+  "invalidPassword": {
+    "email": "shiva@jk.com",
+    "password": "pass1234"
+  },
+  "missingFields": {
+    "email": "shiva@jk.com"
+  }
+}

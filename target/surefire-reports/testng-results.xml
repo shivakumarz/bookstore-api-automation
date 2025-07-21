@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-07-21T09:44:21 IST" name="Bookstore Suite" finished-at="2025-07-21T09:44:25 IST" duration-ms="3192">
+    <groups>
+    </groups>
+    <test started-at="2025-07-21T09:44:21 IST" name="Bookstore Tests" finished-at="2025-07-21T09:44:25 IST" duration-ms="3192">
+      <class name="tests.ValidateCreateUpdateGetDeleteBook">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.ValidateCreateUpdateGetDeleteBook@6f43c82]" started-at="2025-07-21T09:44:24 IST" name="setup" finished-at="2025-07-21T09:44:24 IST" duration-ms="9" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testFullBookFlow()[pri:0, instance:tests.ValidateCreateUpdateGetDeleteBook@6f43c82]" started-at="2025-07-21T09:44:24 IST" name="testFullBookFlow" description="End-to-end test for book lifecycle using chained REST calls" finished-at="2025-07-21T09:44:24 IST" duration-ms="148" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFullBookFlow -->
+      </class> <!-- tests.ValidateCreateUpdateGetDeleteBook -->
+      <class name="tests.UpdateBookTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.UpdateBookTest@821330f]" started-at="2025-07-21T09:44:24 IST" name="setup" finished-at="2025-07-21T09:44:24 IST" duration-ms="10" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="updateBookFromJson()[pri:0, instance:tests.UpdateBookTest@821330f]" started-at="2025-07-21T09:44:24 IST" name="updateBookFromJson" description="Update a book using data from JSON and validate the response" finished-at="2025-07-21T09:44:24 IST" duration-ms="56" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateBookFromJson -->
+      </class> <!-- tests.UpdateBookTest -->
+      <class name="tests.DeleteBookTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.DeleteBookTest@5db6b9cd]" started-at="2025-07-21T09:44:24 IST" name="setup" finished-at="2025-07-21T09:44:24 IST" duration-ms="8" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testDeleteBookAndVerifyNotFound()[pri:0, instance:tests.DeleteBookTest@5db6b9cd]" started-at="2025-07-21T09:44:24 IST" name="testDeleteBookAndVerifyNotFound" description="Create a book, delete it, and confirm it&#039;s not retrievable" finished-at="2025-07-21T09:44:25 IST" duration-ms="71" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDeleteBookAndVerifyNotFound -->
+      </class> <!-- tests.DeleteBookTest -->
+      <class name="tests.CreateBookMissingName">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.CreateBookMissingName@34bde49d]" started-at="2025-07-21T09:44:24 IST" name="setup" finished-at="2025-07-21T09:44:24 IST" duration-ms="10" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="createBookWithMissingName()[pri:0, instance:tests.CreateBookMissingName@34bde49d]" started-at="2025-07-21T09:44:24 IST" name="createBookWithMissingName" description="Attempt to create a book without the required &#039;name&#039; field" finished-at="2025-07-21T09:44:24 IST" duration-ms="20" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createBookWithMissingName -->
+      </class> <!-- tests.CreateBookMissingName -->
+      <class name="tests.AuthData">
+        <test-method signature="loginWithVariousData(java.util.Map,int)[pri:0, instance:tests.AuthData@7b36aa0c]" started-at="2025-07-21T09:44:22 IST" name="loginWithVariousData" data-provider="loginDataProvider" finished-at="2025-07-21T09:44:23 IST" duration-ms="1859" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{email=shiva@jk.com, password=pass1234}]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[400]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithVariousData -->
+        <test-method signature="loginWithVariousData(java.util.Map,int)[pri:0, instance:tests.AuthData@7b36aa0c]" started-at="2025-07-21T09:44:23 IST" name="loginWithVariousData" data-provider="loginDataProvider" finished-at="2025-07-21T09:44:23 IST" duration-ms="23" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{email=shiva@jk.com}]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[500]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithVariousData -->
+        <test-method signature="loginWithVariousData(java.util.Map,int)[pri:0, instance:tests.AuthData@7b36aa0c]" started-at="2025-07-21T09:44:23 IST" name="loginWithVariousData" data-provider="loginDataProvider" finished-at="2025-07-21T09:44:24 IST" duration-ms="244" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{email=shiva@jk.com, password=pass123}]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[200]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithVariousData -->
+      </class> <!-- tests.AuthData -->
+      <class name="tests.CreateBook">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.CreateBook@23f5b5dc]" started-at="2025-07-21T09:44:24 IST" name="setup" finished-at="2025-07-21T09:44:24 IST" duration-ms="265" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="createBookWithValidRandomData()[pri:0, instance:tests.CreateBook@23f5b5dc]" started-at="2025-07-21T09:44:24 IST" name="createBookWithValidRandomData" description="Create a book with valid dynamically generated data" finished-at="2025-07-21T09:44:24 IST" duration-ms="195" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createBookWithValidRandomData -->
+      </class> <!-- tests.CreateBook -->
+      <class name="tests.CreateBookPreviousYear">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.CreateBookPreviousYear@1b1cfb87]" started-at="2025-07-21T09:44:24 IST" name="setup" finished-at="2025-07-21T09:44:24 IST" duration-ms="9" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="createBookWithPreviousYear()[pri:0, instance:tests.CreateBookPreviousYear@1b1cfb87]" started-at="2025-07-21T09:44:24 IST" name="createBookWithPreviousYear" description="Create a book with a published year in the past" finished-at="2025-07-21T09:44:24 IST" duration-ms="39" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createBookWithPreviousYear -->
+      </class> <!-- tests.CreateBookPreviousYear -->
+    </test> <!-- Bookstore Tests -->
+  </suite> <!-- Bookstore Suite -->
+</testng-results>

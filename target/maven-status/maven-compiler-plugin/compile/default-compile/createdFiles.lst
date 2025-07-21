@@ -1,0 +1,6 @@
+config\Config.class
+utils\data\BookPayload.class
+utils\JsonUtil.class
+utils\TokenManager.class
+utils\TokenManager$1.class
+utils\data\BookPayloadBuilder.class

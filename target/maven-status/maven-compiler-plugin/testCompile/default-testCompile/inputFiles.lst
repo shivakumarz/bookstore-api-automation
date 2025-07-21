@@ -1,0 +1,8 @@
+D:\bookstore-api-tests\src\test\java\base\BaseTest.java
+D:\bookstore-api-tests\src\test\java\tests\AuthData.java
+D:\bookstore-api-tests\src\test\java\tests\CreateBook.java
+D:\bookstore-api-tests\src\test\java\tests\CreateBookMissingName.java
+D:\bookstore-api-tests\src\test\java\tests\CreateBookPreviousYear.java
+D:\bookstore-api-tests\src\test\java\tests\DeleteBookTest.java
+D:\bookstore-api-tests\src\test\java\tests\UpdateBookTest.java
+D:\bookstore-api-tests\src\test\java\tests\ValidateCreateUpdateGetDeleteBook.java

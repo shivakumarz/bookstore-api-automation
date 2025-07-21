@@ -1,0 +1,16 @@
+tests\AuthData$1.class
+tests\CreateBook.class
+tests\CreateBookMissingName$1.class
+tests\ValidateCreateUpdateGetDeleteBook$3.class
+tests\DeleteBookTest.class
+base\BaseTest.class
+tests\UpdateBookTest$1.class
+tests\CreateBookPreviousYear$1.class
+tests\ValidateCreateUpdateGetDeleteBook.class
+tests\DeleteBookTest$1.class
+tests\ValidateCreateUpdateGetDeleteBook$2.class
+tests\AuthData.class
+tests\CreateBookMissingName.class
+tests\UpdateBookTest.class
+tests\CreateBookPreviousYear.class
+tests\ValidateCreateUpdateGetDeleteBook$1.class
